@@ -1,3 +1,11 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 2;
+  }
 a :hover{
     color: black;
 }
@@ -13,4 +21,19 @@ a :hover{
 }
 .centero {
     text-align: center;
+}
+.header{
+    margin-top: 3%;
+    padding: 20px 0;
+}
+.car{
+    background-color: #e1f4f3;
+    font-family: 'Slabo 27px', serif;
+    padding-top: 8%;
+    text-align: center;
+    padding-bottom: 8%;
+}
+.car1 .car2 .car3{
+    font-size: 1.24rem;
+    line-height: 250%;
 }
