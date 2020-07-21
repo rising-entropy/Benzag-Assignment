@@ -1,0 +1,16 @@
+a :hover{
+    color: black;
+}
+.navig{
+    background-color: #ffffff;
+}
+.listt{
+    color: #333333;
+    font-size: 1.05rem;
+}
+.navbar-nav { 
+    margin-left: auto; 
+}
+.centero {
+    text-align: center;
+}
