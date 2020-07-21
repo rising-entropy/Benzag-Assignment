@@ -23,8 +23,8 @@ a :hover{
     text-align: center;
 }
 .header{
-    margin-top: 3%;
-    padding: 20px 0;
+    margin-top: 2%;
+    padding: 3% 0;
 }
 .car{
     background-color: #e1f4f3;
@@ -36,4 +36,18 @@ a :hover{
 .car1 .car2 .car3{
     font-size: 1.24rem;
     line-height: 250%;
+}
+@media(max-width: 880px)
+{
+    .header{
+        margin-top: 2%;
+        padding: 10% 0;
+    }
+    .car{
+        background-color: #e1f4f3;
+        font-family: 'Slabo 27px', serif;
+        padding-top: 8%;
+        text-align: center;
+        padding-bottom: 8%;
+    }
 }
