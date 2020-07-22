@@ -1,5 +1,6 @@
 var url = "https://picsum.photos/v2/list";
 
+//Extract and Put Images from JSON
 
 $.getJSON(url,
     function (data) {
@@ -24,13 +25,11 @@ $.getJSON(url,
     }
 );
 
-
-
 onload='$(this).fadeIn()';
-
 
 $(".img-fluid").addClass("wow fadeIn z-depth-1-half");
 
+//navigation bar scroll effect
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -42,7 +41,6 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
-
 
 
 
