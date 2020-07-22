@@ -1,43 +1,19 @@
 var url = "https://picsum.photos/v2/list";
 
 
-$(".pictures").append("<div class='row'>");
-
-
 var urlLst = [];
 $.getJSON(url,
     function (data) {
-        for (var i = 0; i < 30; i++) {
+        for (var i = 0; i < 30; i=i+2) {
             urlLst.push(data[i].download_url);
              var linko = data[i].download_url;
-             
-             if(i%4 == 0)
-             {
-                 $(".pictures").append("<div class='col-lg-4 col-md-6 col-sm-12'");
-                 $(".pictures").append("<img src='"+linko+"' class='img-fluid pic mb-3' data-wow-delay='0.3s'>");
-             }
-             else if(i%4 == 1)
-             {
-                $(".pictures").append("<img src='"+linko+"' class='img-fluid pic mb-3' data-wow-delay='0.3s'>");
-                 $(".pictures").append("</div>");
-             }
-             else if(i%4 == 2)
-             {
-                 $(".pictures").append("<div class='col-lg-4 col-md-12 col-sm-12'");
-                 $(".pictures").append("<img src='"+linko+"' class='img-fluid pic mb-3' data-wow-delay='0.3s'>");
-             }
-             else
-             {
-                $(".pictures").append("<img src='"+linko+"' class='img-fluid pic mb-3' data-wow-delay='0.3s'>");
-                 $(".pictures").append("</div>");
-             }
-
+             var linko2 = data[i+1].download_url;
+             var auth = data[i].author;
+             var auth2 = data[i+1].author;
+                 $(".pictures").append("<div class='col col-lg-4 col-md-6 col-sm-12'><img src='"+linko+"' class='img-fluid pic' data-wow-delay='0.3s' alt='"+auth+"'><img src='"+linko2+"' class='img-fluid pic' data-wow-delay='0.3s' alt='"+auth2+"'></div>");
         }
     }
 );
-
-
-$(".pictures").append("</div>");
 
 
 

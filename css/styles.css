@@ -21,6 +21,7 @@ a :hover{
 }
 .centero {
     text-align: center;
+    z-index: 30000;
 }
 .header{
     margin-top: 2%;
@@ -53,6 +54,14 @@ a :hover{
 }
 
 .pic{
+    padding:1% 2%;
+    margin: auto;
     display: inline-block;
-    height: auto;
+}
+
+.pic :hover{
+    z-index: 5;
+}
+.row{
+    font-size: 0;
 }
