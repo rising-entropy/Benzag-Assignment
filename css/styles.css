@@ -51,3 +51,8 @@ a :hover{
         padding-bottom: 8%;
     }
 }
+
+.pic{
+    display: inline-block;
+    height: auto;
+}
