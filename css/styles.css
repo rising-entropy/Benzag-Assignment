@@ -1,9 +1,9 @@
 .navbar {
     overflow: hidden;
     background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
     z-index: 2;
   }
 a :hover{
@@ -63,7 +63,7 @@ a :hover{
 .pic{
     padding:1% 0;
     margin: 0;
-    width: auto;
+    width: 100%;
     display: inline-block;
 }
 
@@ -106,3 +106,10 @@ body{
     padding-top: 0.5rem;
     padding-bottom: 0.7rem;
 }
+  #navbar {
+    background-color: #ffffff; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
