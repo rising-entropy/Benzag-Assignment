@@ -1,11 +1,9 @@
 var url = "https://picsum.photos/v2/list";
 
 
-var urlLst = [];
 $.getJSON(url,
     function (data) {
         for (var i = 0; i < 30; i++) {
-            urlLst.push(data[i].download_url);
              var linko = data[i].download_url;
              var auth = data[i].author;
              if(i%3==0)

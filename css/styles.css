@@ -61,14 +61,15 @@ a :hover{
 }
 
 .pic{
-    padding:1% 0;
-    margin: 0;
+    
+    margin: 1.2% 0;
     width: 100%;
     display: inline-block;
 }
 
-.pic :hover{
-    z-index: 5;
+.pic:hover{
+    outline: 4px solid black; 
+    
 }
 .row{
     font-size: 0;
@@ -107,9 +108,9 @@ body{
     padding-bottom: 0.7rem;
 }
   #navbar {
-    background-color: #ffffff; /* Black background color */
-    position: fixed; /* Make it stick/fixed */
-    top: 0; /* Stay on top */
-    width: 100%; /* Full width */
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    background-color: #ffffff; 
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    transition: top 0.45s; 
   }
